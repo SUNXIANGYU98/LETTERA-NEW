@@ -1,5 +1,5 @@
 export const configurazione = {
-  testo: "G",
+  testo: "S",
 
   dimensione: 0.8,
   interlinea: 0.7,
@@ -42,7 +42,7 @@ export function disegnaPunto({
   beta = 0,
   gamma = 0,
 }) {
-  rect(x, y, 100);
+  orbitControl(x, y, 100);
 }
 
 /**
