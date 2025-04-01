@@ -43,11 +43,10 @@ export function disegnaPunto({
   gamma = 0,
 }) {
   stroke("black");
-  push();
+
   translate(x, y);
   rotate(frameCount);
   image(img, 0, 0, 10, 100);
-  pop();
 }
 
 /**
@@ -61,10 +60,8 @@ export function caricamentoRisorse() {}
  * Esempio: impostazioni di frame rate, misura degli angoli, ecc.
  */
 export function impostazioni() {
-  frameRate(30);
-  angleMode(DEGREES);
-  rectMode(CENTER);
   img = loadImage(",/assets/Fault.PNG");
+  let img;
 }
 
 /**
