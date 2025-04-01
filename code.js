@@ -42,7 +42,7 @@ export function disegnaPunto({
   beta = 0,
   gamma = 0,
 }) {
-  round(x, y, 100);
+  rect(x, y, 100);
 }
 
 /**
