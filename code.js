@@ -42,7 +42,12 @@ export function disegnaPunto({
   beta = 0,
   gamma = 0,
 }) {
-  rect(x, y, 100);
+  stroke("black");
+  push();
+  translate(x, y);
+  rotate(frameCount);
+  image(img, 0, 0, 10, 100);
+  pop();
 }
 
 /**
@@ -58,6 +63,8 @@ export function caricamentoRisorse() {}
 export function impostazioni() {
   frameRate(30);
   angleMode(DEGREES);
+  rectMode(CENTER);
+  img = loadImage(",/assets/Fault.PNG");
 }
 
 /**
