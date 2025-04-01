@@ -46,25 +46,24 @@ export function disegnaPunto({
   push();
   translate(x, y);
   rotate(frameCount);
-  image(img, 0, 0, 10, 100);
+  image(img, 0, 0, 100, 100);
   pop();
 }
-
-/**
+let img;
+/**.
  * Carica le risorse necessarie
  * Esempio: carica immagini, suoni, ecc.
  */
-export function caricamentoRisorse() {}
+export function caricamentoRisorse() {
+  img = loadImage("./assets/Fault.png");
+}
 
 /**
  * Imposta le impostazioni iniziali
  * Esempio: impostazioni di frame rate, misura degli angoli, ecc.
  */
 export function impostazioni() {
-  frameRate(30);
-  angleMode(DEGREES);
-  rectMode(CENTER);
-  img = loadImage(",/assets/Fault.PNG");
+  imageMode(CENTER);
 }
 
 /**
