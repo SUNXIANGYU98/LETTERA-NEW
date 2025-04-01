@@ -43,7 +43,6 @@ export function disegnaPunto({
   gamma = 0,
 }) {
   round(x, y, 100);
-  assets / InputMonoCondensed - BoldItalic.ttf;
 }
 
 /**
