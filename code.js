@@ -43,6 +43,7 @@ export function disegnaPunto({
   gamma = 0,
 }) {
   orbitControl(x, y, 100);
+  assets / InputMonoCondensed - BoldItalic.ttf;
 }
 
 /**
